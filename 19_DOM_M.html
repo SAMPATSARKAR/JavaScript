@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM|SAM is best</title>
+</head>
+<body style="background-color: #212121;color:#fff">
+    <class class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+    </class>
+</body>
+<!-- <script>
+
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);       
+    // }
+    const dayOne = document.querySelector('.day');
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+    // console.log(parent.childNodes);
+    const div = document.createElement('div')
+    console.log(div);
+    div.className='main'
+    div.id=Math.round(Math.random()*10+1)
+    // div.setAttribute('title','generate title')
+    div.title='generate title'
+    div.style.backgroundColor='pink'
+    div.style.padding='15px 0px 15px 100px'
+    div.innerText='men are brave'
+    // const addText = document.createTextNode('men are brave')
+    // div.appendChild(addText)
+    document.body.appendChild(div)   
+
+</script> -->
+<script>
+    function addLanguage(language){
+        const li = document.createElement('li');
+        li.innerHTML=`${language}`;
+        document.querySelector('.parent').appendChild(li);
+    }
+    addLanguage("Typescript");
+    function addSecLang(languagetwo){
+        const div = document.createElement('div');
+        div.innerHTML=`${languagetwo}`;
+        document.querySelector('.parent').appendChild(div);
+    }
+    addSecLang("Golang")
+    function addthreelang(lang){
+        const li = document.createElement('li');
+        const addtext = document.createTextNode(lang);
+        li.appendChild(addtext);
+        document.querySelector('.parent').appendChild(li);
+
+    }
+    addSecLang('python')
+</script>
+</html>
