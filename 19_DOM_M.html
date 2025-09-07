@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM|SAM is best</title>
 </head>
+
 <body style="background-color: #212121;color:#fff">
     <class class="parent">
         <div class="day">Monday</div>
@@ -41,19 +43,19 @@
 
 </script> -->
 <script>
-    function addLanguage(language){
+    function addLanguage(language) {
         const li = document.createElement('li');
-        li.innerHTML=`${language}`;
+        li.innerHTML = `${language}`;
         document.querySelector('.parent').appendChild(li);
     }
     addLanguage("Typescript");
-    function addSecLang(languagetwo){
+    function addSecLang(languagetwo) {
         const div = document.createElement('div');
-        div.innerHTML=`${languagetwo}`;
+        div.innerHTML = `${languagetwo}`;
         document.querySelector('.parent').appendChild(div);
     }
     addSecLang("Golang")
-    function addthreelang(lang){
+    function addthreelang(lang) {
         const li = document.createElement('li');
         const addtext = document.createTextNode(lang);
         li.appendChild(addtext);
@@ -62,4 +64,5 @@
     }
     addSecLang('python')
 </script>
+
 </html>
